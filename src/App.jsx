@@ -7,6 +7,7 @@ import {MobileMenu} from "./Components/MobileMenu.jsx";
 import {Home} from "./Components/sections/Home.jsx";
 import {LoadingScreen} from "./Components/LoadingScreen.jsx";
 import {Projects} from "./Components/sections/Projects.jsx";
+import {Contact} from "./Components/sections/Contact.jsx";
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -27,6 +28,8 @@ function App() {
                 <About />
 
                 <Projects />
+
+                <Contact/>
 
 
             </div>

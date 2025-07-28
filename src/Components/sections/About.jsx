@@ -1,3 +1,5 @@
+import {RevealOnScroll} from "../RevealOnScroll.jsx";
+
 export const About = () => {
 
     const frontendSkills =[
@@ -40,10 +42,12 @@ export const About = () => {
     className="min-h-screen flex items-center justify-center py-20"
     >
 
+        <RevealOnScroll>
+
         <div className="max-w-3xl mx-auto px-4">
 
-            <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text
-               text-tranparent text-center">
+            <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500
+                         to-purple-600 bg-clip-text text-transparent leading-right">
                 {" "}About Me
             </h2>
 
@@ -172,6 +176,8 @@ export const About = () => {
             </div>
 
         </div>
+
+        </RevealOnScroll>
 
     </section>
     );
