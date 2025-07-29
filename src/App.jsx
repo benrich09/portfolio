@@ -8,6 +8,7 @@ import {Home} from "./Components/sections/Home.jsx";
 import {LoadingScreen} from "./Components/LoadingScreen.jsx";
 import {Projects} from "./Components/sections/Projects.jsx";
 import {Contact} from "./Components/sections/Contact.jsx";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -30,6 +31,8 @@ function App() {
                 <Projects />
 
                 <Contact/>
+
+                <Footer/>
 
 
             </div>
