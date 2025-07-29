@@ -14,14 +14,18 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                         {" "} BEN <span className="text-blue-500"> RICH </span> {" "}
                     </a>
 
-                    <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
-                         onClick={() => setMenuOpen((prev) => !prev)}>
+                    <button
+                        onClick={() => setMenuOpen(prev => !prev)}
+                        className="text-white text-3xl p-2 md:hidden focus:outline-none hover:text-blue-400 transition z-50"
+                        aria-label="Open Menu"
+                    >
                         &#9776;
-                    </div>
+                    </button>
+
 
                     <div className="hidden md:flex items-center space-x-8">
                         <a href="#home" className="text-gray-300 hove:text-white transition-colors">
-                            {" "} Home
+                        {" "} Home
                         </a>
 
                         <a href="#about" className="text-gray-300 hove:text-white transition-colors">
