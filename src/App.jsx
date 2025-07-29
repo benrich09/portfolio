@@ -9,8 +9,7 @@ import {LoadingScreen} from "./Components/LoadingScreen.jsx";
 import {Projects} from "./Components/sections/Projects.jsx";
 import {Contact} from "./Components/sections/Contact.jsx";
 import Footer from "./Components/Footer.jsx";
-import Particles from "react-tsparticles";
-import ParticleBackground from "./Components/ParticleBackground.jsx";
+
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -19,7 +18,6 @@ function App() {
     return (
         <>
             <div>
-                <ParticleBackground/>
                 {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)}/>} {" "}
 
                 <div className={`min-h-screen transition-opacity duration-700
@@ -37,7 +35,6 @@ function App() {
                     <Contact/>
 
                     <Footer/>
-
 
                 </div>
             </div>
