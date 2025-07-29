@@ -6,7 +6,7 @@ export const Contact = () => {
     return(
         <section
         id="contact"
-        className="min-h-screen flex items-center justify-center relative">
+        className="min-h-screen flex items-center justify-center py-20">
 
             <RevealOnScroll>
                 <div className="px-4 w-150">
@@ -23,7 +23,7 @@ export const Contact = () => {
                                    id="name"
                                    name="name" required
                                    className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none
-                                  focus:border-blue-500 focus:bg-blue-500/50"
+                                  focus:border-blue-500 focus:bg-blue-500/5"
                                    placeholder="Name....."/>
                         </div>
 
@@ -32,7 +32,7 @@ export const Contact = () => {
                                    id="email"
                                    name="email" required
                                    className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none
-                                  focus:border-blue-500 focus:bg-blue-500/50"
+                                  focus:border-blue-500 focus:bg-blue-500/5"
                                    placeholder="example@gmail.com"/>
                         </div>
 
@@ -42,7 +42,7 @@ export const Contact = () => {
                                    name="message" required
                                    rows={5}
                                    className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none
-                                  focus:border-blue-500 focus:bg-blue-500/50"
+                                  focus:border-blue-500 focus:bg-blue-500/5"
                                    placeholder="Your Message........."/>
                         </div>
 
