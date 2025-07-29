@@ -143,11 +143,11 @@ export const About = () => {
                     <h3 className="text-xl font-bold mb-4">Education</h3>
                     <ul className="list-disc list-inside text-gray-300 space-y-2">
                         <li>
-                            <strong>B.S. in Information Technology</strong> - IFM University
+                            <strong>B.S. in Information Technology</strong> - Institute of Finance Management
                             (2023 - 2026)
                         </li>
                         <li>
-                            Relevant Coursework : Data Structures, Web Development, Cloud Computing......
+                          Open University : Data Structures, Web Development, Cloud Computing......
                         </li>
                     </ul>
                 </div>
@@ -156,18 +156,18 @@ export const About = () => {
                     <h3 className="text-xl font-bold mb-4">Work Experience</h3>
                     <div className="space-y-4 text-gray-300">
                         <div>
-                            <h4 className="font-semibold">{" "}Software Engineer at ABC Corp (2020 - Present){" "}</h4>
+                            <h4 className="font-semibold">{" "}Backend Developer at Tanzania Posts Corporation (2025 - Present){" "}</h4>
 
                             <p>
-                                Developed and maintained microservices for cloud-based applications.
+                                Developed and maintained backends.
                             </p>
                         </div>
 
                         <div>
-                            <h4 className="font-semibold">{" "}Intern at DEF Startups (2019) {" "}</h4>
+                            <h4 className="font-semibold">{" "}Online Freelancer (2023 -2024) {" "}</h4>
 
                             <p>
-                                Assisted in building front-end components and integration REST APIs
+                                Developing websites for various companies, organisation and business holders.
                             </p>
                         </div>
                     </div>
