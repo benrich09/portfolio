@@ -483,7 +483,7 @@ function App() {
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 className="text-purple-400 mb-3">Backend</h4>
+                                    <h4 className="text-purple-400 mb-3">API</h4>
                                     <div className="flex flex-wrap gap-2">
                                         {API.map((tech, key) => (
                                             <motion.span
