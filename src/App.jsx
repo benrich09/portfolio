@@ -96,16 +96,16 @@ function App() {
         { name: 'Contact', path: '#contact' },
     ];
 
-    const frontendSkills = ["React", "Typescript", "BootstrapCSS", "TailwindCSS"];
-    const BackendSkills = ["Express.js", "Node.js", "Python", "PHP", "Java", "Mysql", "MongoDB"];
-    const programmingLanguages = ["JavaScript", "Python", "PHP", "Java", "Typescript", "C#"];
-    const frameworks = ["React", "Laravel", "Next.js", "Node.js", "React-native"];
+    const Databases = ["Mysql", "PostgreSQL","MariaDB","MongoDB"];
+    const Webframeworks = ["React", "Laravel", "Gin" ,"Express","Nest", "Spring boot"];
+    const programmingLanguages = ["JavaScript", "Typescript", "PHP", "Python", "Java", "Go", "Rust"];
+    const API= ["Rest API", "WEBSOCKETS"];
 
     const skillsWithLevel = [
         { name: "React", level: 90 },
         { name: "TypeScript", level: 85 },
         { name: "Node.js", level: 80 },
-        { name: "Python", level: 75 },
+        { name: "PHP", level: 75 },
         { name: "MongoDB", level: 70 },
         { name: "Java", level: 65 }
     ];
@@ -434,10 +434,11 @@ function App() {
                         >
                             <h3 className="text-xl font-bold mb-6 text-center text-white">Technologies</h3>
                             <div className="space-y-6">
+
                                 <div>
-                                    <h4 className="text-blue-400 mb-3">Frontend</h4>
+                                    <h4 className="text-blue-400 mb-3">Programming Languages</h4>
                                     <div className="flex flex-wrap gap-2">
-                                        {frontendSkills.map((tech, key) => (
+                                        {programmingLanguages.map((tech, key) => (
                                             <motion.span
                                                 key={key}
                                                 className="bg-blue-500/20 text-blue-300 py-1 px-3 rounded-full text-sm hover:bg-blue-500/30 transition-all duration-300 cursor-pointer"
@@ -448,10 +449,29 @@ function App() {
                                         ))}
                                     </div>
                                 </div>
+
                                 <div>
-                                    <h4 className="text-purple-400 mb-3">Backend</h4>
+                                    <h4 className="text-blue-400 mb-3">Web Frameworks</h4>
                                     <div className="flex flex-wrap gap-2">
-                                        {BackendSkills.map((tech, key) => (
+                                        {Webframeworks.map((tech, key) => (
+                                            <motion.span
+                                                key={key}
+                                                className="bg-blue-500/20 text-blue-300 py-1 px-3 rounded-full text-sm hover:bg-blue-500/30 transition-all duration-300 cursor-pointer"
+                                                whileHover={{ scale: 1.05 }}
+                                            >
+                                                {tech}
+                                            </motion.span>
+                                        ))}
+                                    </div>
+
+                                
+
+                                </div>
+
+                                <div>
+                                    <h4 className="text-purple-400 mb-3">Databases</h4>
+                                    <div className="flex flex-wrap gap-2">
+                                        {Databases.map((tech, key) => (
                                             <motion.span
                                                 key={key}
                                                 className="bg-purple-500/20 text-purple-300 py-1 px-3 rounded-full text-sm hover:bg-purple-500/30 transition-all duration-300 cursor-pointer"
@@ -462,6 +482,22 @@ function App() {
                                         ))}
                                     </div>
                                 </div>
+                                <div>
+                                    <h4 className="text-purple-400 mb-3">Backend</h4>
+                                    <div className="flex flex-wrap gap-2">
+                                        {API.map((tech, key) => (
+                                            <motion.span
+                                                key={key}
+                                                className="bg-purple-500/20 text-purple-300 py-1 px-3 rounded-full text-sm hover:bg-purple-500/30 transition-all duration-300 cursor-pointer"
+                                                whileHover={{ scale: 1.05 }}
+                                            >
+                                                {tech}
+                                            </motion.span>
+                                        ))}
+                                    </div>
+                                </div>
+
+
                             </div>
                         </motion.div>
                     </motion.div>
