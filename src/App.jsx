@@ -321,7 +321,7 @@ function App() {
                         initial="hidden"
                         animate="visible"
                     >
-                        {Array.from("Hi, I'm Ben").map((char, index) => (
+                        {Array.from("Hi, I'm Ben Rich").map((char, index) => (
                             <motion.span
                                 key={index}
                                 variants={letterVariants}
