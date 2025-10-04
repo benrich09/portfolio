@@ -1,88 +1,94 @@
-import { useEffect } from "react";
-import React from "react";
+// Navbar.jsx
+import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Keeping for potential, but using a for SPA
 
-export default function Navbar({ menuOpen, setMenuOpen })  {
-    useEffect(() => {
-        document.body.style.overflow = menuOpen ? "hidden" : "";
-    }, [menuOpen]);
+export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const navItems = [
+        { name: 'Home', path: '#home' },
+        { name: 'About', path: '#about' },
+        { name: 'Projects', path: '#projects' },
+        { name: 'Contact', path: '#contact' },
+    ];
 
     return (
-        <div className="fixed top-0 w-full z-50 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10">
-            <div className="max-w-5xl mx-auto px-4">
+        <nav className="fixed top-0 w-full z-50 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg relative overflow-hidden">
+            {/* Subtle Background Overlay from Home */}
+            <div className="absolute inset-0 opacity-30 pointer-events-none">
+                <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
+                <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_80%,rgba(7,37,112,0.6),transparent_50%)] animate-pulse"></div>
+                <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_80%_20%,rgba(120,119,198,0.4),transparent_50%)] animate-pulse delay-1000"></div>
+                
+                {/* Floating Particles (scaled down for navbar) */}
+                <div className="absolute inset-0">
+                    {[...Array(5)].map((_, i) => (
+                        <div
+                            key={i}
+                            className="absolute w-0.5 h-0.5 bg-blue-500 rounded-full opacity-40 animate-float"
+                            style={{
+                                left: `${Math.random() * 100}%`,
+                                top: `${Math.random() * 100}%`,
+                                animationDelay: `${Math.random() * 10}s`,
+                                animationDuration: `${5 + Math.random() * 10}s`,
+                            }}
+                        ></div>
+                    ))}
+                </div>
+            </div>
+            
+            <div className="max-w-5xl mx-auto px-4 relative z-10">
                 <div className="flex justify-between items-center h-16">
-                    <a href="#home" className="font-mono text-xl font-bold text-white hover:text-blue-400 transition-colors">
-                        BEN <span className="text-blue-500">RICH</span>
+                    <a 
+                        href="#home" 
+                        className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent hover:scale-105 transition-all duration-300"
+                    >
+                        BEN <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-600">RICH</span>
                     </a>
 
-                    {/* Mobile Menu Toggle */}
-                    <div
-                        className="md:hidden flex flex-col justify-between w-8 h-6 cursor-pointer z-50"
-                        onClick={() => setMenuOpen((prev) => !prev)}
-                    >
-                        <span className={`block h-1 w-full bg-white rounded transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-                        <span className={`block h-1 w-full bg-white rounded transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`}></span>
-                        <span className={`block h-1 w-full bg-white rounded transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+                    {/* Desktop Menu */}
+                    <div className="hidden md:flex items-center space-x-1">
+                        {navItems.map((item) => (
+                            <a
+                                key={item.name}
+                                href={item.path}
+                                className="flex items-center p-3 rounded-lg text-gray-300 hover:bg-white/10 hover:text-white transition-colors"
+                            >
+                                <span className="hidden sm:inline">{item.name}</span>
+                            </a>
+                        ))}
                     </div>
 
-                    {/* Desktop Nav */}
-                    <div className="hidden md:flex items-center space-x-8">
-                        <a href="#home" className="text-gray-300 hover:text-white transition-colors duration-300 relative group">
-                            Home
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-                        </a>
-                        <a href="#about" className="text-gray-300 hover:text-white transition-colors duration-300 relative group">
-                            About
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-                        </a>
-                        <a href="#projects" className="text-gray-300 hover:text-white transition-colors duration-300 relative group">
-                            Projects
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-                        </a>
-                        <a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-300 relative group">
-                            Contact
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-                        </a>
+                    {/* Mobile Toggle */}
+                    <div className="md:hidden">
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="text-gray-300 hover:text-white p-2 relative w-6 h-6"
+                        >
+                            {/* Hamburger Icon */}
+                            <span className={`absolute inset-0 block w-full h-0.5 bg-current transition-transform duration-300 ease-in-out ${isOpen ? 'rotate-45' : '-translate-y-2'}`} style={{ top: '50%' }}></span>
+                            <span className={`absolute inset-0 block w-full h-0.5 bg-current transition-all duration-300 ease-in-out ${isOpen ? 'opacity-0' : ''}`} style={{ top: '50%' }}></span>
+                            <span className={`absolute inset-0 block w-full h-0.5 bg-current transition-transform duration-300 ease-in-out ${isOpen ? '-rotate-45' : 'translate-y-2'}`} style={{ top: '50%' }}></span>
+                        </button>
                     </div>
                 </div>
 
                 {/* Mobile Menu */}
-                <div
-                    className={`md:hidden fixed top-16 left-0 w-full h-screen bg-[rgba(10, 10, 10, 0.95)] backdrop-blur-lg z-40 transform transition-transform duration-300 ${
-                        menuOpen ? 'translate-x-0' : '-translate-x-full'
-                    }`}
-                >
-                    <div className="flex flex-col items-center justify-center h-full space-y-8">
-                        <a
-                            href="#home"
-                            className="text-gray-300 text-xl hover:text-white transition-colors duration-300"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            Home
-                        </a>
-                        <a
-                            href="#about"
-                            className="text-gray-300 text-xl hover:text-white transition-colors duration-300"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            About
-                        </a>
-                        <a
-                            href="#projects"
-                            className="text-gray-300 text-xl hover:text-white transition-colors duration-300"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            Projects
-                        </a>
-                        <a
-                            href="#contact"
-                            className="text-gray-300 text-xl hover:text-white transition-colors duration-300"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            Contact
-                        </a>
+                {isOpen && (
+                    <div className="md:hidden pb-4">
+                        {navItems.map((item) => (
+                            <a
+                                key={item.name}
+                                href={item.path}
+                                className="flex items-center p-3 rounded-lg text-gray-300 hover:bg-white/10 hover:text-white transition-colors block"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                <span>{item.name}</span>
+                            </a>
+                        ))}
                     </div>
-                </div>
+                )}
             </div>
-        </div>
+        </nav>
     );
-};
+}
