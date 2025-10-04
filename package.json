@@ -17,6 +17,7 @@
     "motion": "^12.23.11",
     "react": "^19.2.0",
     "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.3",
     "react-tsparticles": "^2.12.2",
     "router": "^2.2.0",

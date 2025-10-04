@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './index.css';
-import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaInstagram, FaCheckCircle, FaMapMarkerAlt } from 'react-icons/fa'; // Font Awesome set
+import { SiGmail } from 'react-icons/si';
 import { motion } from "framer-motion";
 import { Sparkles } from "./Components/Sparkles.jsx";
 
@@ -113,34 +114,46 @@ function App() {
         {
             title: "Senotrams",
             description: "Art-tech web app for interaction and support.",
-            tech: ["React", "Node.js", "MongoDB", "Docker"],
+            tech: ["React", "Node.js", ],
             link: "#",
         },
         {
             title: "E-Gadgets",
             description: "E-commerce site for electronic devices.",
-            tech: ["React", "Node.js", "AWS", "Docker"],
+            tech: ["React", "Node.js", ],
             link: "#",
         },
         {
             title: "Mike 360",
             description: "Media and graphics web application.",
-            tech: ["React", "Node.js", "AWS", "Docker"],
+            tech: ["React", "Node.js",],
             link: "https://mikemedia.vercel.app/",
         },
         {
             title: "Avionics",
             description: "Tech services for web and mobile apps.",
-            tech: ["React", "Node.js", "AWS", "Docker"],
+            tech: ["React", "Node.js", ],
             link: "#",
+        },
+        {
+            title: "EMS",
+            description: "Employees Management System.",
+            tech: ["React", "Node.js","Express.js", "Mongodb" ],
+            link: "https://ems-n6sx.vercel.app/",
+        },
+        {
+            title: "Level up Safari",
+            description: "For Tours in Tanzania.",
+            tech: ["React", "Node.js"],
+            link: "https://level-up-safari.vercel.app/",
         },
     ];
 
     const socials = [
-        { name: 'Email', url: 'mailto:your-email@example.com', icon: '✉️' },
-        { name: 'GitHub', url: 'https://github.com/yourusername', icon: '🐱' },
-        { name: 'LinkedIn', url: 'https://linkedin.com/in/yourprofile', icon: '💼' },
-        { name: 'Instagram', url: 'https://instagram.com/yourprofile', icon: '📸' },
+        { name: 'Email', url: 'mailto:benrich205@gmail.com ', icon: <SiGmail /> },
+        { name: 'GitHub', url: 'https://github.com/benrich09', icon: <FaGithub /> },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/benson-richard-9110ab307/', icon: <FaLinkedin /> },
+        { name: 'Instagram', url: 'https://www.instagram.com/avionics_tz?igsh=Njd3NTE4eTN1MXc5&utm_source=qr', icon: <FaInstagram /> },
     ];
 
     const footerLinks = [
@@ -812,9 +825,9 @@ function App() {
                         <div>
                             <h3 className="text-white font-semibold mb-4">Contact</h3>
                             <ul className="space-y-2 text-gray-400">
-                                <li>📧 your-email@example.com</li>
-                                <li>📍 Your Location</li>
-                                <li>💼 Available for freelance</li>
+                                <li><SiGmail /> benrich205@gmail.com </li>
+                                <li><FaMapMarkerAlt color="blue" />Dar es Salaam </li>
+                                <li><FaCheckCircle color="green" />Available for freelance</li>
                             </ul>
                         </div>
                     </div>
@@ -824,9 +837,7 @@ function App() {
                         <p className="text-gray-400 text-sm">
                             &copy; {currentYear} Ben Rich. All rights reserved.
                         </p>
-                        <p className="text-gray-500 text-xs mt-2 md:mt-0">
-                            Crafted with ❤️ using React & Tailwind
-                        </p>
+        
                     </div>
                 </div>
             </footer>
