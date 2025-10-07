@@ -681,19 +681,6 @@ function App() {
                                         </motion.a>
 
 
-                                            
-                                         <button className='group relative inline-flex h-12 w-12 items-center 
-                                         justify-center overflow-hidden rounded-full bg-gradient-to-r dark:from-[#070e41] 
-                                         dark:to-[#263381] from-[#c0c7ff] to-[#4c64ff]  font-medium text-neutral-200 border-2 
-                                         border-[#656fe2] transition-all duration-300 hover:w-32'>\n        
-                                         <div className='inline-flex whitespace-nowrap opacity-0 transition-all duration-200 
-                                         group-hover:-translate-x-3 group-hover:opacity-100'>\n         
-                                          Visit\n       
-                                           </div>\n     
-                                        </button>\n   
-
-
-
                                     </div>
                                 </div>
                             </motion.div>
