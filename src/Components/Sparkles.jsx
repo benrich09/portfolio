@@ -1,4 +1,3 @@
-// Sparkles.jsx (New file for magical background)
 import React from "react";
 
 export function Sparkles() {
