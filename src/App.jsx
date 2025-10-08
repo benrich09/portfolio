@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './index.css';
-import { FaGithub, FaLinkedin, FaInstagram, FaCheckCircle, FaMapMarkerAlt } from 'react-icons/fa'; // Font Awesome set
+import { FaGithub, FaLinkedin, FaInstagram, FaCheckCircle, FaMapMarkerAlt } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 import { motion } from "framer-motion";
 import { Sparkles } from "./Components/Sparkles.jsx";
@@ -133,7 +133,7 @@ function App() {
             title: "Avionics",
             description: "Tech services for web and mobile apps.",
             tech: ["React", "Node.js", ],
-            link: "https://avionics-three.vercel.app/",
+            link: "https://avionics-two.vercel.app/",
         },
         {
             title: "EMS",
