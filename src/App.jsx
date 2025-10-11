@@ -560,7 +560,7 @@ function App() {
                             >
                                 <motion.div variants={letterVariants}>
                                     <motion.h4 className="font-semibold text-white" initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.4 }} viewport={{ once: true }}>
-                                        Backend Dev, TPC (2025-Present)
+                                        Backend Dev, TPC (2025-Oct 2025)
                                     </motion.h4>
                                     <p className="text-sm md:text-base">Built and maintained backends.</p>
                                 </motion.div>
