@@ -114,37 +114,37 @@ function App() {
         {
             title: "Senotrams",
             description: "Art-tech web app for interaction and support.",
-            tech: ["React", "Node.js", ],
+            tech: ["React", "Tailwind", ],
             link: "https://senotrams.vercel.app/",
         },
         {
             title: "E-Gadgets",
             description: "E-commerce site for electronic devices.",
-            tech: ["React", "Node.js", ],
+            tech: ["React", "Tailwind", ],
             link: "https://morden-commerce.vercel.app/",
         },
         {
             title: "Mike 360",
             description: "Media and graphics web application.",
-            tech: ["React", "Node.js",],
+            tech: ["React", "Tailwind",],
             link: "https://mikemedia.vercel.app/",
         },
         {
             title: "Avionics",
             description: "Tech services for web and mobile apps.",
-            tech: ["React", "Node.js", ],
+            tech: ["React", "Tailwind", ],
             link: "https://avionics-two.vercel.app/",
         },
         {
             title: "EMS",
             description: "Employees Management System.",
-            tech: ["React", "Node.js","Express.js", "Mongodb" ],
+            tech: ["React", "Tailwind","Express.js", "Mongodb" ],
             link: "https://ems-n6sx.vercel.app/",
         },
         {
             title: "Level up Safari",
             description: "For Tours in Tanzania.",
-            tech: ["React", "Node.js"],
+            tech: ["React", "Tailwind"],
             link: "https://level-up-safari.vercel.app/",
         },
     ];
