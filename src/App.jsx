@@ -339,7 +339,7 @@ function App() {
                         transition={{ duration: 0.8, delay: 0.8 }}
                         viewport={{ once: true }}
                     >
-                       Full-stack developer crafting scalable web apps with exceptional UX. I architect solutions that boost engagement by 3x and slash load times in half. Clean code, unbreakable performance.
+                        Full-stack developer passionate about scalable web apps and exceptional UX.
                     </motion.p>
 
                     <motion.div 
@@ -560,7 +560,7 @@ function App() {
                             >
                                 <motion.div variants={letterVariants}>
                                     <motion.h4 className="font-semibold text-white" initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.4 }} viewport={{ once: true }}>
-                                        Backend Dev, TPC (2025-Oct 2025)
+                                        Backend Dev, TPC (2025-Oct 202)
                                     </motion.h4>
                                     <p className="text-sm md:text-base">Built and maintained backends.</p>
                                 </motion.div>
