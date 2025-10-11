@@ -113,7 +113,7 @@ function App() {
     const projects = [
         {
             title: "Senotrams",
-            description: "Art-tech web app for interaction and support.",
+            description: "Art-tech web app for Artists.",
             tech: ["React", "Tailwind", ],
             link: "https://senotrams.vercel.app/",
         },
@@ -131,7 +131,7 @@ function App() {
         },
         {
             title: "Avionics",
-            description: "Tech services for web and mobile apps.",
+            description: "Company for tech services web and mobile apps.",
             tech: ["React", "Tailwind", ],
             link: "https://avionics-two.vercel.app/",
         },
@@ -143,7 +143,7 @@ function App() {
         },
         {
             title: "Level up Safari",
-            description: "For Tours in Tanzania.",
+            description: "Tourist Services ",
             tech: ["React", "Tailwind"],
             link: "https://level-up-safari.vercel.app/",
         },
