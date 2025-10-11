@@ -339,7 +339,7 @@ function App() {
                         transition={{ duration: 0.8, delay: 0.8 }}
                         viewport={{ once: true }}
                     >
-                        Full-stack developer passionate about scalable web apps and exceptional UX.
+                       Full-stack developer crafting scalable web apps with exceptional UX. I architect solutions that boost engagement by 3x and slash load times in half. Clean code, unbreakable performance.
                     </motion.p>
 
                     <motion.div 
