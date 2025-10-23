@@ -139,7 +139,7 @@ function App() {
             title: "EMS",
             description: "Employees Management System.",
             tech: ["React", "Tailwind","Express.js", "Mongodb" ],
-            link: "https://ems-n6sx.vercel.app/",
+            link: "https://ems-red-xi.vercel.app/",
         },
         {
             title: "Level up Safari",
