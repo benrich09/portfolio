@@ -141,6 +141,12 @@ function App() {
             tech: ["React", "Tailwind","Express.js", "Mongodb" ],
             link: "https://ems-red-xi.vercel.app/",
         },
+          {
+            title: "Logistics Management",
+            description: "Logistics and delivery management system.",
+            tech: ["React", "Tailwind","Nest.js", "PostgreSQL","Prisma" ],
+            link: "https://logistic-inky.vercel.app/",
+        },
         {
             title: "Level up Safari",
             description: "Tourist Services ",
