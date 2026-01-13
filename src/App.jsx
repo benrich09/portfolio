@@ -102,12 +102,14 @@ function App() {
     const API= ["Rest API", "WEBSOCKETS"];
 
     const skillsWithLevel = [
-        { name: "React", level: 90 },
-        { name: "TypeScript", level: 85 },
+        { name: "TypeScript", level: 90 },
+        { name: "JavaScript", level: 90 },
         { name: "Node.js", level: 80 },
         { name: "PHP", level: 75 },
-        { name: "MongoDB", level: 70 },
-        { name: "Java", level: 65 }
+        { name: "PostgreSQL", level: 70 },
+        { name: "Java", level: 65 },
+        {name: "Python", level: 50 },
+
     ];
 
     const projects = [
