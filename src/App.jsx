@@ -26,7 +26,8 @@ function App() {
             
             const sections = ['home', 'about', 'projects', 'contact'];
             const current = sections.find(section => {
-                const element = document.getElementById(section);
+            const element = document.getElementById(section);
+
                 if (element) {
                     const rect = element.getBoundingClientRect();
                     return rect.top <= 100 && rect.bottom >= 100;
@@ -97,8 +98,8 @@ function App() {
     ];
 
     const Databases = ["Mysql", "PostgreSQL","MariaDB","MongoDB"];
-    const Webframeworks = ["React", "Laravel", "Gin" ,"Express","Nest", "Spring boot"];
-    const programmingLanguages = ["JavaScript", "Typescript", "PHP", "Python", "Java", "Go", "Rust"];
+    const Webframeworks = ["React.js", "Next.js", "Nest.js" ,"Express.js", "Laravel", "Expo", "Spring boot"];
+    const programmingLanguages = ["JavaScript", "Typescript", "PHP",  "Java","Python",];
     const API= ["Rest API", "WEBSOCKETS"];
 
     const skillsWithLevel = [
@@ -140,7 +141,7 @@ function App() {
         {
             title: "EMS",
             description: "Employees Management System.",
-            tech: ["React", "Tailwind","Express.js", "Mongodb" ],
+            tech: ["React", "Tailwind","Nest.js", "Prisma" ],
             link: "https://ems-red-xi.vercel.app/",
         },
           {
